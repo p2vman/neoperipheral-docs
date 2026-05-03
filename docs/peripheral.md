@@ -1,5 +1,9 @@
 #Peripherals
 
+<p style="color:red; font-size:20px; font-weight:bold;">
+Documentation in development!!!
+</p>
+
 #Radar
 block-id: `neoperipheral:radar_block`<br>
 peripheral-type: `neo_radar`
