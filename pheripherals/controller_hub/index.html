@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Controller Hub - NeoPeripheral</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Controller Hub";
+        var mkdocs_page_input_path = "pheripherals/controller_hub.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> NeoPeripheral
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Overview</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Blocks & Items</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/radar_block/">Radar Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/creative_radar_block/">Creative Radar Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/entity_radar_block/">Entity Radar Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/socket_block/">Socket & Modules</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/nfc_blocks/">NFC Blocks & Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/sable_engine_block/">Sable Engine Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/crypto_block/">Crypto Block</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Peripherals API</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../radar/">Radar</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../entity_radar/">Entity Radar</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../socket/">Socket</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../nfc/">NFC Master & Reader</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sable_engine/">Sable Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cannon_mount/">Cannon Mount</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../compact_mount/">Compact Cannon Mount</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Controller Hub</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#methods">Methods</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#getbuttonkey">getButton(key)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getbuttonstable">getButtons(table)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getkeys">getKeys()</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Integrations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/cbc/">Create Big Cannons</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/create/">Create / CTC</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">NeoPeripheral</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Peripherals API</li>
+      <li class="breadcrumb-item active">Controller Hub</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="linked-controller-hub-peripheral-api">Linked Controller Hub Peripheral API</h1>
+<p><strong>Peripheral Types</strong>: <code>linked_controller_hub</code>, <code>tweaked_linked_controller_hub</code>, <code>controller_hub</code></p>
+<p>Exposed by the <strong>Linked Controller Hub Block</strong> (Create / Create Tweaked Controllers integration). Allows computers to read wireless button presses from bound Linked Controllers.</p>
+<hr />
+<h2 id="methods">Methods</h2>
+<h3 id="getbuttonkey"><code>getButton(key)</code></h3>
+<p>Checks if a specific controller button is currently pressed.
+- <strong>Arguments</strong>: <code>key</code> (<em>string</em>): The button identifier string (e.g., <code>"keyUp"</code>, <code>"keyJump"</code>).
+- <strong>Returns</strong>: <code>boolean</code> - <code>true</code> if pressed, <code>false</code> otherwise.</p>
+<hr />
+<h3 id="getbuttonstable"><code>getButtons(table)</code></h3>
+<p>Populates a provided Lua table with the boolean states of all bound controller buttons.
+- <strong>Arguments</strong>: <code>table</code> (<em>table</em>): Target table to populate.
+- <strong>Returns</strong>: <code>nil</code> (Mutates the passed table in-place).</p>
+<hr />
+<h3 id="getkeys"><code>getKeys()</code></h3>
+<p>Returns an array of all available button identifier strings supported by the hub.
+- <strong>Returns</strong>: <code>table</code> - <code>{"keyUp", "keyDown", "keyLeft", "keyRight", "keyJump", "keyShift"}</code></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../compact_mount/" class="btn btn-neutral float-left" title="Compact Cannon Mount"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../integrations/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../compact_mount/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../integrations/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

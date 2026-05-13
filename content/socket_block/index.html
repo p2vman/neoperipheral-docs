@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Socket & Modules - NeoPeripheral</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Socket \u0026 Modules";
+        var mkdocs_page_input_path = "content/socket_block.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> NeoPeripheral
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Overview</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Blocks & Items</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../radar_block/">Radar Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../creative_radar_block/">Creative Radar Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../entity_radar_block/">Entity Radar Block</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Socket & Modules</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#available-modules">Available Modules</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#managing-modules">Managing Modules</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../nfc_blocks/">NFC Blocks & Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sable_engine_block/">Sable Engine Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../crypto_block/">Crypto Block</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Peripherals API</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../pheripherals/radar/">Radar</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../pheripherals/entity_radar/">Entity Radar</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../pheripherals/socket/">Socket</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../pheripherals/nfc/">NFC Master & Reader</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../pheripherals/sable_engine/">Sable Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../pheripherals/cannon_mount/">Cannon Mount</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../pheripherals/compact_mount/">Compact Cannon Mount</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../pheripherals/controller_hub/">Controller Hub</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Integrations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/cbc/">Create Big Cannons</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/create/">Create / CTC</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">NeoPeripheral</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Blocks & Items</li>
+      <li class="breadcrumb-item active">Socket & Modules</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="socket-modules">Socket &amp; Modules</h1>
+<p><strong>Block ID</strong>: <code>neoperipheral:socket</code><br />
+<strong>Peripheral Type</strong>: <code>neo_socket</code> (<a href="../../pheripherals/socket/">API Reference</a>)</p>
+<p>The <strong>Socket Block</strong> is a modular chassis capable of housing up to 4 plug-and-play expansion modules (slots 0 through 3). This allows players to combine different peripheral functions into a single block space.</p>
+<h2 id="available-modules">Available Modules</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Module Name</th>
+<th style="text-align: left;">Item ID</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Radar Module</strong></td>
+<td style="text-align: left;"><code>neoperipheral:radar_module</code></td>
+<td style="text-align: left;">Provides sub-level radar scanning capabilities.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Creative Radar Module</strong></td>
+<td style="text-align: left;"><code>neoperipheral:creative_radar_module</code></td>
+<td style="text-align: left;">Provides creative/admin-grade radar scanning capabilities.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Crypto Module</strong></td>
+<td style="text-align: left;"><code>neoperipheral:crypto_module</code></td>
+<td style="text-align: left;">Cryptographic processing module (WIP).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="managing-modules">Managing Modules</h2>
+<p>Modules can be inserted into or removed from the Socket Block. Connected computers can dynamically query inserted modules, inspect slots, and interact with module-specific methods.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../entity_radar_block/" class="btn btn-neutral float-left" title="Entity Radar Block"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../nfc_blocks/" class="btn btn-neutral float-right" title="NFC Blocks & Items">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../entity_radar_block/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../nfc_blocks/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

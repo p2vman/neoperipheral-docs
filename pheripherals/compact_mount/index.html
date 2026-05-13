@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Compact Cannon Mount - NeoPeripheral</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Compact Cannon Mount";
+        var mkdocs_page_input_path = "pheripherals/compact_mount.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> NeoPeripheral
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Overview</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Blocks & Items</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/radar_block/">Radar Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/creative_radar_block/">Creative Radar Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/entity_radar_block/">Entity Radar Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/socket_block/">Socket & Modules</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/nfc_blocks/">NFC Blocks & Items</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/sable_engine_block/">Sable Engine Block</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../content/crypto_block/">Crypto Block</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Peripherals API</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../radar/">Radar</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../entity_radar/">Entity Radar</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../socket/">Socket</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../nfc/">NFC Master & Reader</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sable_engine/">Sable Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cannon_mount/">Cannon Mount</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Compact Cannon Mount</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#methods">Methods</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#assemble">assemble()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#disassemble">disassemble()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fire">fire()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#isrunning">isRunning()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getyaw">getYaw()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getpitch">getPitch()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#setyawyaw">setYaw(yaw)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#setpitchpitch">setPitch(pitch)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getx-gety-getz">getX(), getY(), getZ()</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#getdirection">getDirection()</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../controller_hub/">Controller Hub</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Integrations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/cbc/">Create Big Cannons</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../integrations/create/">Create / CTC</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">NeoPeripheral</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Peripherals API</li>
+      <li class="breadcrumb-item active">Compact Cannon Mount</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="compact-cannon-mount-peripheral-api">Compact Cannon Mount Peripheral API</h1>
+<p><strong>Peripheral Types</strong>: <code>compact_mount</code>, <code>neo_compact_mount</code></p>
+<p>Exposed when a computer connects to a <strong>Create Big Cannons</strong> Fixed/Compact Cannon Mount. Allows full automated control over assembly, aiming, and firing.</p>
+<hr />
+<h2 id="methods">Methods</h2>
+<h3 id="assemble"><code>assemble()</code></h3>
+<p>Attempts to assemble the cannon structure attached to the mount.
+- <strong>Returns</strong>: <code>boolean</code> - <code>true</code> if assembly was successfully initiated, <code>false</code> if already running.</p>
+<hr />
+<h3 id="disassemble"><code>disassemble()</code></h3>
+<p>Disassembles the currently running cannon structure.
+- <strong>Returns</strong>: <code>boolean</code> - <code>true</code> if disassembled successfully, <code>false</code> if not running.</p>
+<hr />
+<h3 id="fire"><code>fire()</code></h3>
+<p>Fires the assembled cannon. Rate-limited per tick.
+- <strong>Returns</strong>: <code>nil</code> (Throws an error if the cannon is not assembled or cannot fire).</p>
+<hr />
+<h3 id="isrunning"><code>isRunning()</code></h3>
+<p>Checks if the cannon mount is currently assembled and running.
+- <strong>Returns</strong>: <code>boolean</code></p>
+<hr />
+<h3 id="getyaw"><code>getYaw()</code></h3>
+<p>Gets the current yaw orientation angle of the mount.
+- <strong>Returns</strong>: <code>number</code></p>
+<hr />
+<h3 id="getpitch"><code>getPitch()</code></h3>
+<p>Gets the current pitch elevation angle of the mount.
+- <strong>Returns</strong>: <code>number</code></p>
+<hr />
+<h3 id="setyawyaw"><code>setYaw(yaw)</code></h3>
+<p>Sets the target yaw orientation angle.
+- <strong>Arguments</strong>: <code>yaw</code> (<em>number</em>)</p>
+<hr />
+<h3 id="setpitchpitch"><code>setPitch(pitch)</code></h3>
+<p>Sets the target pitch elevation angle.
+- <strong>Arguments</strong>: <code>pitch</code> (<em>number</em>)</p>
+<hr />
+<h3 id="getx-gety-getz"><code>getX()</code>, <code>getY()</code>, <code>getZ()</code></h3>
+<p>Gets the exact block coordinate of the cannon controller.
+- <strong>Returns</strong>: <code>number</code></p>
+<hr />
+<h3 id="getdirection"><code>getDirection()</code></h3>
+<p>Gets the horizontal facing direction of the cannon mount controller block.
+- <strong>Returns</strong>: <code>string</code> (e.g., <code>"north"</code>, <code>"south"</code>, <code>"east"</code>, <code>"west"</code>)</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../cannon_mount/" class="btn btn-neutral float-left" title="Cannon Mount"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../controller_hub/" class="btn btn-neutral float-right" title="Controller Hub">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../cannon_mount/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../controller_hub/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
