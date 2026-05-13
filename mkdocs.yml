@@ -1,4 +1,5 @@
 site_name: NeoPeripheral
+theme: readthedocs
 nav:
   - Overview: index.md
   - Blocks & Items:
