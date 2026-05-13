@@ -1,2 +1,24 @@
 site_name: NeoPeripheral
-theme: readthedocs
+nav:
+  - Overview: index.md
+  - Blocks & Items:
+      - Radar Block: content/radar_block.md
+      - Creative Radar Block: content/creative_radar_block.md
+      - Entity Radar Block: content/entity_radar_block.md
+      - Socket & Modules: content/socket_block.md
+      - NFC Blocks & Items: content/nfc_blocks.md
+      - Sable Engine Block: content/sable_engine_block.md
+      - Crypto Block: content/crypto_block.md
+  - Peripherals API:
+      - Radar: pheripherals/radar.md
+      - Entity Radar: pheripherals/entity_radar.md
+      - Socket: pheripherals/socket.md
+      - NFC Master & Reader: pheripherals/nfc.md
+      - Sable Engine: pheripherals/sable_engine.md
+      - Cannon Mount: pheripherals/cannon_mount.md
+      - Compact Cannon Mount: pheripherals/compact_mount.md
+      - Controller Hub: pheripherals/controller_hub.md
+  - Integrations:
+      - Overview: integrations/index.md
+      - Create Big Cannons: integrations/cbc.md
+      - Create / CTC: integrations/create.md

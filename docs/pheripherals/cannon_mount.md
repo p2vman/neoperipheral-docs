@@ -1,37 +1,67 @@
-#Cannon mount
-peripheral-types: [`cannon_mount`, `neo_cannon_mount`]<br>
+# Cannon Mount Peripheral API
+
+**Peripheral Types**: `cannon_mount`, `neo_cannon_mount`
+
+Exposed when a computer connects to a **Create Big Cannons** Cannon Mount. Allows full automated control over assembly, aiming, and firing.
 
 ---
-##`assemble()`<br>
+
+## Methods
+
+### `assemble()`
+Attempts to assemble the cannon structure attached to the mount.
+- **Returns**: `boolean` - `true` if assembly was successfully initiated, `false` if already running.
 
 ---
-##`fire()`<br>
+
+### `disassemble()`
+Disassembles the currently running cannon structure.
+- **Returns**: `boolean` - `true` if disassembled successfully, `false` if not running.
 
 ---
-##`disassemble()`<br>
+
+### `fire()`
+Fires the assembled cannon. Rate-limited per tick.
+- **Returns**: `nil` (Throws an error if the cannon is not assembled or cannot fire).
 
 ---
-##`isRunning()`<br>
+
+### `isRunning()`
+Checks if the cannon mount is currently assembled and running.
+- **Returns**: `boolean`
 
 ---
-##`getYaw()`<br>
+
+### `getYaw()`
+Gets the current yaw orientation angle of the mount.
+- **Returns**: `number`
 
 ---
-##`getPitch()`<br>
+
+### `getPitch()`
+Gets the current pitch elevation angle of the mount.
+- **Returns**: `number`
 
 ---
-##`setPitch(pitch)`<br>
+
+### `setYaw(yaw)`
+Sets the target yaw orientation angle.
+- **Arguments**: `yaw` (*number*)
 
 ---
-##`setYaw(yaw)`<br>
+
+### `setPitch(pitch)`
+Sets the target pitch elevation angle.
+- **Arguments**: `pitch` (*number*)
 
 ---
-##`getX()`<br>
+
+### `getX()`, `getY()`, `getZ()`
+Gets the exact block coordinate of the cannon controller.
+- **Returns**: `number`
 
 ---
-##`getY()`<br>
 
----
-##`getZ()`<br>
-
----
+### `getDirection()`
+Gets the horizontal facing direction of the cannon mount controller block.
+- **Returns**: `string` (e.g., `"north"`, `"south"`, `"east"`, `"west"`)
